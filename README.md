@@ -9,11 +9,17 @@ improve efficiency, and sometimes to alter functionality. As such
 there are likely sections which are redundant, inefficient, and 
 with confusing variable names or comments.
 
-There are two sets of R files. The first set were submitted to a 
+There are multiple sets of R files. The first set (NS or LS as first characters) were submitted to a 
 supercomputing cluster to generate the data. The second set of files (with Analysis in title)
-analysed these results and collected them into a 
-single document for all MD results and one for all LOR results. 
-Small alterations have been made to aid comprehension, but the results
+generated variables for analysis from these data and collected them into a 
+single document for all MD results and one for all LOR results. Copies of these documents
+are also included as csv files for those who don't wish to rerun the simulation but want to use the results.
+The data included in the csvs was examined in multiple ways, but the figures in the article (along with several others)
+can be generated using the csvs with the files which have SimpleDiagrams in the title.
+Finally the looped diagrams from the supplementary material can be generated using the files which have 
+LoopDiagram in the title and the csvs.
+
+Small alterations to the code have been made to aid comprehension, but the results
 should be exactly the same as we found.
 
 There are several sections of code that I have copied from various sources, including 
@@ -41,4 +47,4 @@ RDS file types were used, which should be noted before use.
 It may well work in a situation where it cannot use parallel resources 
 but it will be substantially less efficient.
 
-5. Code was run using R 3.0.2, and changes may be needed to update code for more recent versions.
+5. Code was initially run using R 3.0.2, then checked to ensure function in R 4.0.3
