@@ -60,7 +60,7 @@ Begg_c <- -0.3
 Begg_sided <- 1
 
 # Set up within study reporting bias - this is now one sided
-Tested.outcomes <- 5
+Tested.outcomes <- 2
 Sd.split <- 0.6
 
 # Size of per unit bias increase

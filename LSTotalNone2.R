@@ -55,7 +55,7 @@ Begg_c <- -0.3
 Begg_sided <- 1
 
 # Set up within study reporting bias
-Tested.outcomes <- 5
+Tested.outcomes <- 2
 Sd.split <- 0.8
 
 # Size of per unit bias increase
@@ -508,7 +508,7 @@ LogOR.Sim.Results <- foreach (m = 1:Reps, .combine=rbind, .packages = c("data.ta
               return(list(b = NA,  se = NA))
             },
             warning = function(w){
-              return(list(list(b = NA,  se = NA)))
+              return(list(b = NA,  se = NA))
             }
             )
             
@@ -519,7 +519,7 @@ LogOR.Sim.Results <- foreach (m = 1:Reps, .combine=rbind, .packages = c("data.ta
               return(list(b = NA, tau2 = NA, se = NA))
             },
             warning = function(w){
-              return(list(list(b = NA, tau2 = NA, se = NA)))
+              return(list(b = NA, tau2 = NA, se = NA))
             }
             )
             
@@ -528,7 +528,7 @@ LogOR.Sim.Results <- foreach (m = 1:Reps, .combine=rbind, .packages = c("data.ta
             },error = function(e){
               return(list(b = NA, tau2 = NA, se = NA, I2 = NA))
             },warning = function(w){
-              return(list(list(b = NA, tau2 = NA, se = NA, I2 = NA)))
+              return(list(b = NA, tau2 = NA, se = NA, I2 = NA))
             })
             
             # Henmi & Copas
@@ -538,7 +538,7 @@ LogOR.Sim.Results <- foreach (m = 1:Reps, .combine=rbind, .packages = c("data.ta
             },error = function(e){
               return(list(se = NA, ci.lb = NA, ci.ub = NA))
             },warning = function(w){
-              return(list(list(se = NA, ci.lb = NA, ci.ub = NA)))
+              return(list(se = NA, ci.lb = NA, ci.ub = NA))
             })
             
             ma.hc.REML <- tryCatch({
@@ -546,7 +546,7 @@ LogOR.Sim.Results <- foreach (m = 1:Reps, .combine=rbind, .packages = c("data.ta
             },error = function(e){
               return(list(se = NA, ci.lb = NA, ci.ub = NA))
             },warning = function(w){
-              return(list(list(se = NA, ci.lb = NA, ci.ub = NA)))
+              return(list(se = NA, ci.lb = NA, ci.ub = NA))
             })
             
             # Knapp Hartung
