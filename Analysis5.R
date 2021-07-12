@@ -85,7 +85,7 @@ Global_list_label <- c("AltOut",
 
 UMD.Complete <- data.table()
 
-for (i in 1:6){
+for (i in 1:4){
   
   rm(list = c("Normal.Sim.Results", "Total.results"))
   

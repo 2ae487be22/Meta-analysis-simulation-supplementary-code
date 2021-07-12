@@ -88,7 +88,7 @@ Global_list_label <- c("AltOut",
 
 LogOR.Complete <- data.table()
 
-for (i in 1:6){
+for (i in 1:4){
 
 rm(list = c("LogOR.Sim.Results", "Total.results", "Extra.values"))
 
