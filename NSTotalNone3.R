@@ -13,7 +13,6 @@ library(compiler)
 library(metafor)
 enableJIT(3)
 
-set.seed(123)
 
 # Number of cores for parallel
 num.Cores <- 16
